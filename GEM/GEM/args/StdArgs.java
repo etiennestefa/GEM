@@ -98,7 +98,7 @@ public abstract class StdArgs extends Args {
     }
     /**
      * Method isConfig that returns if config is a configuration
-     * @return
+     * @return if the configuration exists
      */
     protected Boolean isConfig(){
         FileLoader f = new FileLoader(config);

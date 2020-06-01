@@ -15,7 +15,7 @@ public class GEMArgs extends StdArgs {
     protected static GEMArgs instance = new GEMArgs();
     /**
      * Method getInstance that returns the only instance of the class
-     * @return
+     * @return the only instance of GEMArgs
      */
     public static GEMArgs getInstance() {
         return instance;
@@ -36,7 +36,6 @@ public class GEMArgs extends StdArgs {
      * String outputFile, output file path
      */
     private String outputFile = "";
-
     /**
      * Method setI that sets input according to String cs
      * 

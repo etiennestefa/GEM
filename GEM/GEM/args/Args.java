@@ -7,13 +7,6 @@ import GEM.corr.*;
  */
 public abstract class Args extends StdCorrect {
     /**
-     * Method getInstance that return an instance of args
-     * @return
-     */
-    public static Args getInstance(){
-        return null;
-    }
-    /**
      * Method SetArgs that set Args according to execution arguments
      * @param args execution arguments
      */
@@ -29,26 +22,26 @@ public abstract class Args extends StdCorrect {
      */
     protected String args[];
     /**
-     * current
+     * int curr index of the current argument analyzed
      */
     private int curr = -1;
     /**
      * Method hasNext that returns is there is another argument to check
-     * @return
+     * @return outcome
      */
     private Boolean checkNext(){
         return args.length>curr && curr>=0;
     }
     /**
-     * Method hasNext that returns is there is another argument to check
-     * @return
+     * Method hasNext that returns if there is another argument to check and sets the following one
+     * @return outcome
      */
     protected Boolean hasNext(){
         nextCurrent();
         return checkNext();
     }
     /**
-     * Method nextCurrent that increases current
+     * Method nextCurrent that increases current and sets the new current if present
      */
     private void nextCurrent(){
         curr ++;
@@ -56,7 +49,7 @@ public abstract class Args extends StdCorrect {
             current = args[curr];
     }
     /**
-     * Method resetCurrent that sets current 0
+     * Method resetCurrent that sets curr -1
      */
     protected void resetCurrent(){
         curr = -1;
@@ -72,7 +65,7 @@ public abstract class Args extends StdCorrect {
     }
     protected String current = "";
     /**
-     * Abstract Method load that must be implemented in each subclass
+     * Abstract Method load that must be implemented in each subclass and analyzes the arguments
      */
     public abstract void load();
 }

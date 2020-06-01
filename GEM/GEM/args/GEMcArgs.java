@@ -13,7 +13,7 @@ public class GEMcArgs extends StdArgs{
     protected static GEMcArgs instance = new GEMcArgs();
     /**
      * Method getInstance that returns the only instance of the class
-     * @return
+     * @return the only instance
      */
     public static GEMcArgs getInstance(){
         return instance;
