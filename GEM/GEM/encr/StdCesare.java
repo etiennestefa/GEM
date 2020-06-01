@@ -3,6 +3,8 @@ package GEM.encr;
 import GEM.utils.*;
 import GEM.val.*;
 import GEM.gui.*;
+import GEM.lan.Language;
+import GEM.lan.Languages;
 
 /**
  * Class StdCesare that implements Cifrario di Cesare
@@ -73,9 +75,9 @@ public class StdCesare extends StdFixed {
         Lines ls = new Lines();
         Words ws;
         do{
-            gui.showMsg("Insert key between 'a' and 'z'");
+            gui.showMsg(Languages.getInstance().getMsg(Language.Msg.keyAZ));
             ws = gui.getInputLn();
-            if(!isKey(ws)) GUI.getInstance().showError("This is not a key !");
+            if(!isKey(ws)) GUI.getInstance().showError(Languages.getInstance().getError(Language.Error.notKey));
         }while(!isKey(ws));
         ls.add(ws);
         return FileSaver.writeFile(config, ls);
