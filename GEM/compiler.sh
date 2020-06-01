@@ -1,1 +1,1 @@
-javac -d /GEM GEM/*/*.java
+javac GEM/*/*.java
