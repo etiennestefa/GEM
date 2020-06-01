@@ -15,6 +15,8 @@ public class English implements Language {
                 return "Switching language to ";
             case taskSuccess:
                 return "Task completed successfully";
+            case keyAZ:
+                return "Insert key between 'a' and 'z'";
             default: 
                 return "UNKNOWN MESSAGE";
         }
@@ -44,6 +46,8 @@ public class English implements Language {
                 return " is not a valid input";
             case confNotNeeded:
                 return " does not need configuration";
+            case notKey:
+                return "This is not a key !";
             default: 
                 return "UNKNOWN ERROR";
         }

@@ -10,7 +10,8 @@ public interface Language{
         msg,
         goodBye,
         switchLan,
-        taskSuccess
+        taskSuccess,
+        keyAZ
     }
     /**
      * String fake that is the string shown when a function is not implemented
@@ -36,7 +37,8 @@ public interface Language{
         initFail,
         fileWriteFail,
         notValidInput,
-        confNotNeeded
+        confNotNeeded,
+        notKey
     }
     /**
      * Method getError that returns the error as string in the correct language

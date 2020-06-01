@@ -15,6 +15,8 @@ public class Italiano implements Language {
                 return "Passaggio alla lingua ";
             case taskSuccess:
                 return "Compito portato a termine con successo";
+            case keyAZ:
+                return "Inserire una chiave tra 'a' e 'z'";
             default: 
                 return "MESSAGGIO SCONOSCIUTO";
         }
@@ -44,6 +46,8 @@ public class Italiano implements Language {
                 return " non è un input valido";
             case confNotNeeded:
                 return " non necessita configurazione";
+            case notKey:
+                return "Questa non e' una chiave !";
             default: 
                 return "ERRORE SCONOSCIUTO";
         }

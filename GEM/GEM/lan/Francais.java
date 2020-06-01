@@ -15,6 +15,8 @@ public class Francais implements Language {
                 return "Pasage a' la langue ";
             case taskSuccess:
                 return "Tache terminee avec succes ";
+            case keyAZ:
+                return "Tapez une cle entre 'a' et 'z'";
             default: 
                 return "MESSAGE INCONNU";
         }
@@ -44,6 +46,8 @@ public class Francais implements Language {
                 return " n'est pas une source valide";
             case confNotNeeded:
                 return " ne deande pas de configuration";
+            case notKey:
+                return "Ceci n'est pas une cle !";
             default: 
                 return "ERREUR INCOUNNU";
         }
